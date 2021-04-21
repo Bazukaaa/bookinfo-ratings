@@ -1,5 +1,5 @@
 ratings:
-  namespace: student125-bookinfo-dev
+  namespace: student128-bookinfo-dev
   image: ghcr.io/bazukaaa/bookinfo-ratings
   tag: dev
   replicas: 1
@@ -11,7 +11,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$2
   host: bookinfo.dev.opsta.net
-  path: "/student125/ratings(/|$)(.*)"
+  path: "/student128/ratings(/|$)(.*)"
   serviceType: ClusterIP
 extraEnv:
   SERVICE_VERSION: v2
